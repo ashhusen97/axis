@@ -685,3 +685,58 @@ h6 {
   font-weight: 800;
   font-family: times;
 }
+/*  =================== 16 health ==================== */
+.health-bg #banner {
+  background: url("../img/Gallery/Group\ 239.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6% 4%;
+}
+.health-bg #banner .hero {
+  text-align: left;
+  color: white;
+
+  display: inline-block;
+  margin: 140px 0px 0px 70px;
+}
+.health-bg #banner h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  line-height: 1.9rem;
+  margin: 0 !important;
+}
+.health-bg #banner h1 {
+  font-size: 4rem;
+}
+.health-bg #poop {
+  padding-bottom: 5%;
+  background-color: rgb(226, 226, 226);
+}
+.health-bg #poop .card {
+  background: transparent;
+  position: relative;
+  margin-bottom: 200px !important ;
+}
+.health-bg #poop .card img {
+  border: 5px solid white;
+  border-radius: 10px;
+}
+.health-bg #poop .card .card-title {
+  background-color: #f5f2ff;
+
+  position: absolute;
+  bottom: -160px;
+  border-radius: 10px;
+}
+.health-bg #poop .card .card-title .description {
+  padding: 10px;
+}
+.health-bg #poop .card .author {
+  background-color: var(--main-color);
+  padding: 10px;
+}
