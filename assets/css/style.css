@@ -93,6 +93,12 @@ body {
 .bg-white {
   background-color: white !important;
 }
+.bg-sec {
+  background-color: rgba(145, 191, 28, 0.5);
+}
+.mr-7 {
+  margin-right: 5rem;
+}
 /* ================== 1) Navbar ==================== */
 #nav-bar {
   position: sticky;
@@ -607,9 +613,7 @@ body {
   color: white;
 }
 /* ================== 15) services ==================== */
-.services-bg {
-  background-color: white !important;
-}
+
 .services-bg #banner {
   background: url(../img/Gallery/Mask\ Group\ 32.png);
   background-size: cover;
@@ -626,14 +630,58 @@ body {
 }
 .hero-left h1 {
   margin: 0;
-  line-height: 0px;
+  font-family: times;
+  line-height: 1.5rem;
 }
 .hero-left h1:nth-child(2) {
   color: #3b19b8;
-  font-family: helvetica-bold;
+  font-family: times;
+  font-weight: 800;
+  font-size: 5rem;
 }
 .hero-right p {
   margin-top: 40px;
   width: 60%;
   margin-left: 5%;
+}
+.hero span {
+  color: #3b19b8;
+}
+.times {
+  font-family: times !important ;
+}
+.services-bg #support {
+  padding: 4% 0%;
+  background: #fff;
+}
+
+.services-bg h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.9rem !important;
+  font-family: times !important;
+}
+.services-bg #support h1:nth-child(2) {
+  font-size: 5rem;
+}
+.services-bg #support h1:nth-child(3) {
+  text-align: right;
+}
+.services-bg #testing {
+  background-color: #f7f5f5;
+}
+.services-bg #testing h1 {
+  color: var(--sec-color);
+  font-weight: 800;
+  font-size: 4rem;
+}
+.services-bg #testing .example {
+  padding-top: 16%;
+}
+.services-bg #testing .example p {
+  font-weight: 800;
+  font-family: times;
 }
