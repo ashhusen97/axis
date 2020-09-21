@@ -1,0 +1,639 @@
+@font-face {
+  src: url("../fonts/Helvetica/HelveticaNeueBd.ttf");
+  font-family: helvetica-bold;
+}
+@font-face {
+  src: url("../fonts/MRkVIm.ttf");
+  font-family: times;
+}
+@font-face {
+  src: url("../fonts/timesitalic.ttf");
+  font-family: times-italic;
+}
+@font-face {
+  src: url("../fonts/Helvetica/HelveticaNeue\ Light.ttf");
+  font-family: helvetica-light;
+}
+@font-face {
+  src: url("../fonts/Helvetica/HelveticaNeueMed.ttf");
+  font-family: helvetica-med;
+}
+@font-face {
+  src: url("../fonts/Helvetica/HelveticaNeue.ttf");
+  font-family: helvetica;
+}
+:root {
+  --main-color: #91bf1c;
+  --sec-color: #3b19b8;
+}
+
+.text-primary {
+  color: var(--sec-color) !important;
+}
+/* ================ Global ====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100% !important;
+}
+.image-border-20 {
+  border: 20px solid white;
+}
+body {
+  font-family: helvetica !important;
+  background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/Gallery/fixed\ image-2.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.title {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  color: var(--sec-color);
+  font-weight: 600;
+  font-size: 25px;
+  font-family: times;
+}
+.title span {
+  background: #fff;
+  padding: 0 10px;
+}
+.bg-transparent {
+  background: transparent !important;
+}
+.border-50 {
+  border-radius: 50px !important;
+}
+.bg-purple {
+  background-color: var(--sec-color) !important;
+}
+.text-purple {
+  color: var(--sec-color) !important;
+  font-weight: 700;
+}
+.text-green {
+  color: var(--main-color) !important;
+}
+.mt-6 {
+  margin-top: 25% !important;
+}
+.w-80 {
+  width: 90% !important;
+}
+.bg-white {
+  background-color: white !important;
+}
+/* ================== 1) Navbar ==================== */
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar {
+  background: white;
+
+  padding: 0 40px !important;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 11;
+}
+.navbar .nav-leave {
+  position: absolute;
+  right: 0;
+  z-index: -9;
+}
+.navbar-brand img {
+  height: 70px;
+}
+.navbar-nav li {
+  padding: 50px 20px 21px 20px;
+  font-size: 20px;
+}
+.navbar-nav li a {
+  float: right;
+  text-align: right;
+  font-weight: 600;
+}
+.navbar .nav-btn i {
+  padding: 0 8px;
+  font-size: 18px;
+  color: var(--sec-color);
+  float: right;
+  text-align: right;
+}
+.navbar-toggler {
+  outline: none !important;
+}
+
+/* ================== 2) Banner ==================== */
+#banner {
+  position: relative;
+  padding: 0;
+  padding-top: 5%;
+}
+
+.banner-bottom-border {
+  width: 100%;
+  height: 36px;
+  padding: 10px;
+  background-color: var(--main-color);
+}
+#banner h1 {
+  font-family: times !important;
+  margin-top: 25px;
+  font-weight: 800;
+}
+#banner h1 span {
+  display: block;
+  line-height: 48px;
+}
+#banner h1 span:nth-child(2) {
+  font-weight: 800;
+  font-size: 80px;
+  margin-left: 26px;
+}
+#banner h1 span:nth-child(4) {
+  margin-left: 26px;
+}
+#banner .leave {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  z-index: -111;
+}
+#banner .lady {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.hero-img-1 {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+#banner #bgg {
+  position: absolute;
+  bottom: 0;
+}
+
+.hero-title {
+}
+/* ================== 3) Intro ==================== */
+#intro {
+  background: url(../img/Gallery/zeSGoB.png);
+  background-size: cover;
+  background-position: center;
+  padding: 5% 10%;
+}
+#intro h1 {
+  font-family: times;
+  font-weight: 800;
+  line-height: 50px;
+}
+#intro h1:nth-child(1) {
+  font-size: 3.5rem;
+  margin-top: 50px;
+}
+#intro h1:nth-child(2) {
+  color: var(--sec-color);
+  font-family: times-italic;
+  font-size: 2.2rem;
+  line-height: 1.5rem;
+}
+#intro h1:nth-child(3) {
+  line-height: 1.5rem;
+  font-family: times-italic;
+}
+#intro p {
+  width: 70%;
+
+  margin: 10px auto;
+}
+#intro img {
+  height: 350px;
+}
+/* ================== 4) About Us ==================== */
+#about {
+  padding-top: 3%;
+  background-color: #fff;
+}
+
+#about .sabziman {
+  height: 310px;
+}
+#about .hero {
+  background: url("../img/Gallery/Mask\ Group\ 8.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 50px;
+  position: absolute;
+  width: 100%;
+  top: -20px;
+}
+#about .hero h2 {
+  line-height: 30px;
+}
+@media (max-width: 576px) {
+  #about .hero {
+    top: -7px;
+    position: relative;
+  }
+}
+/* ================== 5) Subscription  ==================== */
+#subscription {
+  background: #f7f5f5;
+  padding-top: 5%;
+  position: relative;
+}
+#subscription p {
+  font-weight: 600;
+}
+
+#subscription p:nth-child(2) {
+  color: var(--sec-color);
+}
+#subscription .book {
+  height: 350px;
+  margin-right: auto;
+  float: right;
+}
+#subscription input {
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid gray;
+  padding-left: 20px;
+}
+.myBtn {
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 30px;
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* ================== 6) Nutrition  ==================== */
+#nutrition {
+  position: relative;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("../img/Gallery/Mask\ Group\ 7.png");
+  background-position: center;
+  background-size: cover;
+  padding: 8% 4%;
+}
+#nutrition .grid {
+  position: absolute;
+  top: 0;
+
+  right: 20%;
+}
+#nutrition .group_7 {
+  position: absolute;
+  top: 150px;
+  height: 760px;
+  z-index: -99991;
+}
+#nutrition .nutrition-1,
+#nutrition .nutrition-2 {
+  height: 300px;
+}
+
+#nutrition .question-title {
+  color: var(--sec-color);
+}
+/* ================== 7) Consltation  ==================== */
+#consultation {
+  background: url(../img/Gallery/svgs/Group\ 221.png);
+  background-color: white;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 5%;
+}
+#consultation img {
+  height: 90px;
+  width: 90px;
+}
+#consultation .card {
+  min-height: 500px;
+  margin-top: 10px;
+  max-height: 600px;
+}
+#consultation .consultation-duration {
+  width: 140px;
+  background: var(--sec-color);
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 4px 6px 14px rgba(51, 7, 153, 0.3);
+  color: white;
+
+  font-weight: 700;
+  padding: 5px;
+  font-size: 19px;
+  line-height: 20px;
+}
+.consultation-duration p {
+  line-height: 20px;
+
+  margin: 0;
+}
+/* ================== 8) blog ==================== */
+#blog {
+  padding-top: 5%;
+  background: #fff;
+}
+#blog .card {
+  width: 20rem;
+  margin-right: 40px;
+}
+/* ================== 9) Services ==================== */
+#services {
+  padding: 5% 4%;
+  background: #fff;
+}
+#services .card {
+  width: 100%;
+}
+/* ================== 10) Contact ==================== */
+#contact {
+  background: white;
+  padding: 0;
+}
+#contact .contact-holder {
+  padding: 5% 4%;
+  background: url(../img/Gallery/contact.png);
+  background-size: cover;
+  background-position: center;
+}
+/* ================== 11) Footer ==================== */
+
+#footer {
+  background: var(--main-color);
+  z-index: 9999;
+  font-family: times;
+}
+#footer .address-section {
+  background-color: white;
+  height: 100% !important;
+  padding: 20px;
+}
+#footer .address-section p {
+  line-height: 1.5rem;
+  margin: 0;
+  font-family: helvetica-med;
+  font-size: 18px;
+  color: rgb(129, 129, 129);
+}
+#footer .blog-section {
+  padding: 2% 2%;
+  color: #fff;
+  text-align: right;
+  font-weight: 800;
+}
+#footer .blog-section p:nth-child(1) {
+  padding-top: 1%;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+#footer .blog-section a {
+  color: white;
+  text-decoration: underline;
+  letter-spacing: 0px;
+  line-height: 1rem;
+}
+#footer .social-media {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+#footer ul li {
+  display: inline;
+  font-size: 20px;
+  color: white;
+  width: 50px !important;
+  height: 50px !important;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* ================== 12) About Page ==================== */
+
+/* ================== 13) About Page Banner ==================== */
+.about-bg #banner {
+  background: url("../img/Gallery/bgAunty.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 5% 4%;
+  height: 88vh;
+}
+
+.about-bg #banner .path-201 {
+  height: 550px;
+  position: absolute;
+  bottom: -250px;
+  right: 160px;
+  z-index: -1;
+}
+.about-bg #banner .hero {
+  padding-top: 20%;
+  padding-left: 200px;
+}
+.about-bg #banner .hero h2 {
+  font-weight: 700;
+  color: black;
+
+  margin: 0;
+  line-height: 40px;
+}
+.about-bg #banner .hero h2:nth-child(1) {
+  margin-left: 30px;
+}
+
+.about-bg #banner .hero h2:nth-child(2) {
+  color: var(--main-color);
+  font-size: 50px;
+  font-weight: 800;
+}
+.paragraph {
+  font-weight: 1000;
+  padding-left: 6%;
+}
+.paragraph p {
+  margin: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .about-bg #banner {
+    height: auto;
+  }
+
+  .paragraph {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+  }
+  .paragraph p {
+    width: 100% !important;
+  }
+  .about-bg #banner .hero {
+    padding-top: 20%;
+    padding-left: 20%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-bg #banner {
+    height: auto;
+  }
+
+  .paragraph {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+  }
+  .paragraph p {
+    width: 100% !important;
+  }
+  .about-bg #banner .hero {
+    padding-top: 20%;
+    padding-left: 20%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .about-bg #banner .hero {
+    padding-top: 20%;
+    padding-left: 20%;
+  }
+  .about-bg #banner {
+    height: auto;
+  }
+}
+/* ================== 13) About Page Intro ==================== */
+.about-bg #intro {
+  padding: 0;
+  padding-top: 14%;
+  padding-bottom: 5%;
+  position: relative;
+  z-index: -1;
+  background-color: white;
+}
+.about-bg #intro h1:nth-child(1) {
+  font-size: 25px;
+  margin: 0;
+  margin-right: 17%;
+  line-height: 30px;
+}
+.about-bg #intro h1:nth-child(2) {
+  font-size: 40px;
+  margin: 0;
+  line-height: 30px;
+  margin-right: 15%;
+  color: var(--sec-color);
+  margin-bottom: 10px;
+}
+.about-bg #intro p {
+  font-size: 12px;
+  font-weight: 800;
+}
+.about-bg #intro .bg-rectangle {
+  background: url(../img/Gallery/Rectangle\ 55.png);
+  background-size: cover;
+  padding: 60px 56px;
+  width: 35%;
+}
+
+.about-bg #intro .bg-rectangle .icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+.path-203 {
+  position: absolute;
+  top: 30%;
+  left: -150px;
+}
+.repeat-grid {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 250px;
+  height: 120px !important;
+}
+.about-bg #intro .bg-eclipse {
+  background: url(../img/Gallery/Ellipse\ 6.png);
+  background-size: cover;
+  padding: 60px 56px;
+  margin-top: -80px;
+  width: 35%;
+  z-index: 99;
+}
+.me {
+  font-size: 60px;
+  font-family: helvetica-bold;
+}
+@media (max-width: 767.98px) {
+  .about-bg #intro .bg-rectangle {
+    width: 100% !important;
+  }
+}
+/* ================== 14) Contact Page ==================== */
+.contact-bg #contact {
+  background-color: rgba(98, 0, 255, 0.344);
+}
+
+.contact-bg #contact form {
+  padding: 40px;
+}
+.contact-bg #contact form label {
+  color: white;
+}
+/* ================== 15) services ==================== */
+.services-bg {
+  background-color: white !important;
+}
+.services-bg #banner {
+  background: url(../img/Gallery/Mask\ Group\ 32.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 7% 0;
+}
+.boxes {
+  position: absolute;
+  height: 150px;
+  top: -60px;
+  left: 140px;
+}
+.hero-left h1 {
+  margin: 0;
+  line-height: 0px;
+}
+.hero-left h1:nth-child(2) {
+  color: #3b19b8;
+  font-family: helvetica-bold;
+}
+.hero-right p {
+  margin-top: 40px;
+  width: 60%;
+  margin-left: 5%;
+}
