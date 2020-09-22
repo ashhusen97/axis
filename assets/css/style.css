@@ -213,10 +213,25 @@ body {
 .hero-title {
 }
 
-@media (max-width: 576px) {
+@media (max-width: 786px) {
   #about .hero {
     top: -7px;
     position: relative;
+  }
+  .aunty {
+    display: none;
+  }
+  .orders {
+    order: 1;
+  }
+  #banner .leave {
+    width: 100%;
+    z-index: -111;
+    height: 100vh;
+  }
+  .hero-row {
+    display: flex !important ;
+    flex-direction: row;
   }
 }
 /* ================== 3) Intro ==================== */
@@ -478,8 +493,9 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 5% 4%;
-  height: 88vh;
+  padding: 0% 4%;
+  height: 100% !important;
+  background-attachment: fixed;
 }
 
 .about-bg #banner .path-201 {
@@ -514,6 +530,7 @@ body {
   padding-left: 6%;
 }
 .paragraph p {
+  font-weight: 800;
   margin: 10px;
   font-size: 14px;
 }
@@ -522,7 +539,9 @@ body {
   .about-bg #banner {
     height: auto;
   }
-
+  .about-bg .bg-eclipse {
+    display: none !important;
+  }
   .paragraph {
     background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
@@ -570,7 +589,6 @@ body {
   padding-bottom: 5%;
   position: relative;
   z-index: -1;
-  background-color: white;
 }
 .about-bg #intro h1:nth-child(1) {
   font-size: 25px;
@@ -948,4 +966,59 @@ h6 {
 }
 .pages-no span {
   font-size: 4rem;
+}
+/* ================= recipes ================ */
+.recipes-bg #banner {
+  background: url("../img/Gallery/Group\ 259.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15% 4% 7% 14%;
+}
+.recipes-bg #banner .hero {
+  text-align: left;
+  color: white;
+  display: inline-block;
+}
+.recipes-bg #banner .hero h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  line-height: 2.4rem !important;
+  margin: 0 !important;
+}
+.recipes-bg #banner .hero h1 {
+  font-size: 4rem;
+}
+.recipes-bg #recipe {
+  padding: 4%;
+  background-color: white;
+}
+.dots {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: var(--sec-color);
+  margin: 14px;
+  opacity: 0.4;
+}
+.active-dots {
+  opacity: 1;
+}
+.recipe-container {
+  height: 92vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(37, 7, 148, 0.6);
+}
+.recipe-container .card {
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-bottom: 2px solid white;
 }
