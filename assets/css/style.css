@@ -140,7 +140,23 @@ body {
 .navbar-toggler {
   outline: none !important;
 }
-
+@media (max-width: 767.98px) {
+  .navbar .nav-leave {
+    display: none;
+  }
+  .navbar {
+    padding: 0 0px !important;
+  }
+  .navbar-nav li {
+    padding: 10px 20px 21px 20px;
+    font-size: 20px;
+    background-color: var(--main-color);
+    border-bottom: 1px #f7f5f5 solid;
+  }
+  .navbar-brand img {
+    margin: 10px;
+  }
+}
 /* ================== 2) Banner ==================== */
 #banner {
   position: relative;
@@ -156,7 +172,7 @@ body {
 }
 #banner h1 {
   font-family: times !important;
-  margin-top: 25px;
+  margin-top: 77px;
   font-weight: 800;
 }
 #banner h1 span {
@@ -173,14 +189,15 @@ body {
 }
 #banner .leave {
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   width: 90%;
   z-index: -111;
 }
+
 #banner .lady {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
 }
 .hero-img-1 {
@@ -194,6 +211,13 @@ body {
 }
 
 .hero-title {
+}
+
+@media (max-width: 576px) {
+  #about .hero {
+    top: -7px;
+    position: relative;
+  }
 }
 /* ================== 3) Intro ==================== */
 #intro {
@@ -426,20 +450,14 @@ body {
 #footer .social-media {
   display: flex;
   align-items: flex-end;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
-#footer ul li {
-  display: inline;
-  font-size: 20px;
-  color: white;
-  width: 50px !important;
-  height: 50px !important;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
+#footer .social-media div {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  margin: 15px 10px;
 }
-
 /* ================== 12) About Page ==================== */
 
 /* ================== 13) About Page Banner ==================== */
@@ -691,14 +709,14 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 6% 4%;
+  padding: 3% 4%;
 }
 .health-bg #banner .hero {
   text-align: left;
   color: white;
 
   display: inline-block;
-  margin: 140px 0px 0px 70px;
+  margin: 140px 0px 0px 110px;
 }
 .health-bg #banner h1,
 h2,
@@ -739,4 +757,93 @@ h6 {
 .health-bg #poop .card .author {
   background-color: var(--main-color);
   padding: 10px;
+}
+.health-bg #poop button {
+  height: 50px;
+  background-image: linear-gradient(to top, #957af9, #4b3d7d);
+  border: none;
+  text-transform: uppercase;
+}
+
+/* author */
+.author-bg #banner {
+  background: url("../img/Gallery/HMwWhv.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 14% 4% 6% 4%;
+}
+.author-bg #banner .hero {
+  text-align: left;
+  color: white;
+
+  display: inline-block;
+}
+.author-bg #banner .hero h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  line-height: 2.4rem !important;
+  margin: 0 !important;
+}
+.author-bg #banner .hero h1 {
+  font-size: 4rem;
+}
+.author-bg #banner .hero h3 {
+  font-size: 2rem;
+  margin-left: 50px !important;
+}
+.author-bg #blogs {
+  background: url(../img/Gallery/Group\ 240.png) no-repeat;
+  background-size: cover;
+  background-color: white;
+  background-position: center;
+}
+.author-bg #blogs .card {
+  background: transparent;
+  position: relative;
+  margin-bottom: 200px !important ;
+}
+.author-bg #blogs .card img {
+  border: 5px solid white;
+  border-radius: 10px;
+}
+.author-bg #blogs .card .card-title {
+  background-color: #f5f2ff;
+
+  position: absolute;
+  bottom: -160px;
+  border-radius: 10px;
+}
+.author-bg #blogs .card .card-title .description {
+  padding: 10px;
+}
+.author-bg #blogs .card .author {
+  background-color: var(--main-color);
+  padding: 10px;
+}
+.author-bg #blogs i {
+  color: var(--sec-color);
+  margin: 10px 20px;
+  font-size: 28px;
+  font-weight: 800;
+}
+.author-bg .pagination {
+  background: var(--sec-color);
+  width: 25px;
+  opacity: 0.4;
+  color: white;
+  height: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.author-bg .active-pag {
+  opacity: 1;
 }
