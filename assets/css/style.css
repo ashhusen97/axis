@@ -793,6 +793,9 @@ h2 {
   .about-bg #banner .hero .main-title {
     margin-top: 10%;
   }
+  .conversation {
+    padding-top: 18%;
+  }
 }
 /* ================== 13) About Page Intro ==================== */
 .about-bg #intro {
