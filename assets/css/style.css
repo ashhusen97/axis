@@ -44,6 +44,7 @@ img {
 }
 body {
   font-family: helvetica !important;
+  font-weight: 800 !important;
   background: linear-gradient(
       to top,
       rgba(255, 255, 255, 0.7),
@@ -418,11 +419,21 @@ body {
 /* ================== 8) blog ==================== */
 #blog {
   padding-top: 5%;
-  background: #fff;
+  padding-bottom: 3%;
+  background: url(../img/Gallery/Group\ 233.png);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
 }
 #blog .card {
   width: 20rem;
   margin-right: 40px;
+  background: transparent;
+}
+
+#blog .card-title small {
+  font-size: 1rem !important;
+  color: black !important;
 }
 /* ================== 9) Services ==================== */
 #services {
@@ -795,10 +806,10 @@ h2 {
 }
 @media (min-width: 1370px) {
   .about-bg #banner .hero .main-title {
-    margin-top: 10%;
+    margin-top: 9%;
   }
   .conversation {
-    padding-top: 20%;
+    padding-top: 17%;
   }
   .conversation p {
     font-size: 16px;
@@ -924,7 +935,7 @@ h2 {
 }
 .services-bg #support {
   padding: 4% 0%;
-  background: #fff;
+  background: transparent;
 }
 
 .services-bg h1,
@@ -1273,4 +1284,75 @@ h6 {
 }
 .programs-bg #program p {
   font-family: helvetica-bold !important;
+}
+/* ============================== Program page ======================== */
+.consultation-bg #banner {
+  background: url("../img/Gallery/index/Group\ 257.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15% 4% 7% 14%;
+}
+.consultation-bg #consultation {
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(../img/Gallery/pexels-ella-olsson-1640777.jpg);
+
+  background-size: cover;
+  background-position: center start;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.edward {
+  background: url(../img/Gallery/pexels-edward-jenner-4031820.jpg);
+  width: 100%;
+  min-height: 270px;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+.br-purple-btm {
+  border-bottom: 2px solid var(--sec-color);
+}
+.msk53 {
+  background: url(../img/Gallery/Mask\ Group\ 53.png);
+  width: 100%;
+  height: 380px;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  margin-top: 40px;
+  background-position: center;
+}
+.italic {
+  font-family: times-italic !important;
+}
+.consultation-bg #consultation ul {
+  color: #3b19b8 !important;
+}
+.msk55 {
+  background: url(../img/Gallery/Mask\ Group\ 55.png);
+  width: 100%;
+  min-height: 270px;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  margin-top: 40px;
+  background-position: center;
+}
+.msk54 {
+  background: url(../img/Gallery/Mask\ Group\ 54.jpg);
+  width: 100%;
+  height: 380px;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  margin-top: 40px;
+  background-position: center;
 }
