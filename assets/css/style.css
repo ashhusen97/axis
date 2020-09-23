@@ -686,6 +686,10 @@ h2 {
   .paragraph p {
     width: 100% !important;
   }
+  .about-bg #banner .hero .paragraphs {
+    margin-top: 7%;
+    width: 100%;
+  }
   .about-bg #banner .hero {
     padding-top: 20%;
     padding-left: 20%;
@@ -727,19 +731,20 @@ h2 {
     background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
   }
+  .paragraph {
+    width: 100%;
+  }
   .paragraph p {
     width: 100% !important;
   }
   .about-bg #banner .hero {
-    padding-top: 10%;
     padding-left: 20%;
-    background-color: rgba(255, 255, 255, 0.5);
   }
   .about-bg #banner .hero h2:nth-child(2) {
     font-size: 5rem;
   }
   .about-bg #banner .container {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
   }
   .about-bg #banner .banner-body {
@@ -762,11 +767,10 @@ h2 {
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .about-bg #banner .hero {
-    padding-top: 10%;
     padding-left: 20%;
   }
   .about-bg #banner .hero .main-title {
-    width: 60%;
+    width: 100%;
   }
   .about-bg #banner {
     height: auto;
@@ -775,7 +779,7 @@ h2 {
     font-size: 6rem;
   }
   .about-bg #banner .container {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
   }
   .conversation h2 {
@@ -1243,4 +1247,30 @@ h6 {
 }
 .recipe-container .card p {
   color: white;
+}
+
+/* ============================== Program page ======================== */
+.programs-bg #banner {
+  background: url("../img/Gallery/index/Group\ 260.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15% 4% 7% 14%;
+}
+.programs-bg #program {
+  background-image: linear-gradient(
+      to top,
+      rgba(220, 211, 253, 0.6),
+      rgba(220, 211, 253, 0.6)
+    ),
+    url(../img/Gallery/pexels-daria-shevtsova-1095550.jpg);
+
+  background-size: cover;
+  background-position: center start;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+.programs-bg #program p {
+  font-family: helvetica-bold !important;
 }
