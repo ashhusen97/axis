@@ -796,6 +796,12 @@ h2 {
   .conversation {
     padding-top: 18%;
   }
+  .conversation p {
+    font-size: 17px;
+  }
+  .hire {
+    padding-top: 10%;
+  }
 }
 /* ================== 13) About Page Intro ==================== */
 .about-bg #intro {
