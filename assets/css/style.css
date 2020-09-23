@@ -789,6 +789,11 @@ h2 {
     width: 100%;
   }
 }
+@media (min-width: 1370px) {
+  .about-bg #banner .hero .main-title {
+    margin-top: 20%;
+  }
+}
 /* ================== 13) About Page Intro ==================== */
 .about-bg #intro {
   padding: 0;
