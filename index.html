@@ -16,7 +16,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-
+    <link
+      rel="stylesheet"
+      href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
     <title>Axis</title>
   </head>
   <body>
@@ -147,10 +154,10 @@
             <div class="col-md-6 p-0">
               <div class="hero">
                 <h2>Are you</h2>
-                <h2>Dreaming</h2>
+                <h2>dreaming</h2>
                 <h2>about future plans</h2>
                 <h2>for your life</h2>
-                <h2>but... your health</h2>
+                <h2><span class="text-purple">but...</span> your health</h2>
                 <h2>is Holding you back?</h2>
               </div>
             </div>
@@ -436,7 +443,27 @@
           <h1 class="title text-center text-uppercase text-green">
             <span>Services</span>
           </h1>
-          <div class="row">
+
+          <div class="owl-carousel">
+            <div class="image">
+              <img src="./assets/img/Gallery/index/Mask Group 17.png" />
+              <div class="overlay">Gallery</div>
+            </div>
+            <div class="image">
+              <img src="./assets/img/Gallery/index/Rectangle -1.png" />
+              <div class="overlay">Blog</div>
+            </div>
+            <div class="image">
+              <img src="./assets/img/Gallery/index/Mask Group 17.png" />
+              <div class="overlay">Dummy</div>
+            </div>
+            <div class="image">
+              <img src="./assets/img/Gallery/index/Rectangle 35.png" />
+              <div class="overlay">hello</div>
+            </div>
+          </div>
+
+          <!-- <div class="row">
             <div class="col-md-3 text-center m-0">
               <div class="card ml-auto border-0">
                 <img
@@ -493,7 +520,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -582,5 +609,25 @@
     </div>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+
+    <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          item: 4,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
