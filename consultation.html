@@ -53,8 +53,30 @@
                 <li class="nav-item">
                   <a class="nav-link" href="about-us.html">About</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="services.html">Service</a>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="services.html"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="services.html"
+                      >What axis for health can offer</a
+                    >
+                    <a class="dropdown-item" href="consultation.html"
+                      >Nutrition Consultations</a
+                    >
+
+                    <a class="dropdown-item" href="programs.html">Programs</a>
+                    <a class="dropdown-item" href="recipes.html">Recipes</a>
+                    <a class="dropdown-item" href="health.html">Health Blog</a>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact-us.html">Contact</a>
@@ -281,21 +303,34 @@
 
           <div class="col-md-3 social-media">
             <div class="fb">
-              <img src="./assets/img/Gallery/Icon simple-facebook.png" alt="" />
+              <a href="http://facebook.com/theaxisforhealth" target="blank">
+                <img
+                  src="./assets/img/Gallery/Icon simple-facebook.png"
+                  alt=""
+                />
+              </a>
             </div>
-            <div class="twitter">
-              <img src="./assets/img/Gallery/Path 6.png" alt="" />
-            </div>
+
             <div class="instagram">
-              <img src="./assets/img/Gallery/Group 2.png" alt="" />
+              <a href="http://instagram.com/axisforhealth" target="blank">
+                <img src="./assets/img/Gallery/Group 2.png" alt="" />
+              </a>
             </div>
           </div>
           <div class="col-md-5 blog-section">
             <p>From The Blog</p>
-            <p><a href="">What is Nutritional Therapy?</a></p>
-            <p><a href="">Functional Medicine</a></p>
-            <p><a href="">Why does bowel movement matter? Yes Poop! </a></p>
-            <p><a href="">A Stressful Brain</a></p>
+            <p>
+              <a href="health.html?blog=nutrition"
+                >What is Nutritional Therapy?</a
+              >
+            </p>
+            <p><a href="health.html?blog=functional">Functional Medicine</a></p>
+            <p>
+              <a href="health.html?blog=poop"
+                >Why does bowel movement matter? Yes Poop!
+              </a>
+            </p>
+            <p><a href="health.html?blog=stress">A Stressful Brain</a></p>
           </div>
         </div>
       </section>

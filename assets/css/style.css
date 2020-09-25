@@ -108,10 +108,8 @@ body {
 }
 .navbar {
   background: white;
-
   padding: 0 40px !important;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
   z-index: 11;
 }
 .navbar .nav-leave {
@@ -651,23 +649,20 @@ h2 {
   margin-left: auto;
   width: 50%;
   height: 100px;
+
   position: relative;
 }
 .visit-btn img {
   width: 50px;
   height: 50px;
-  z-index: 99;
-  position: absolute;
-  left: 0;
-  top: 0;
+  margin-left: -30px;
 }
 .visit-btn button {
-  position: absolute;
-  left: 30px;
+  margin-left: 40px;
 }
 .hire {
   width: 40%;
-  padding-top: 7%;
+  padding-top: 5%;
   padding-bottom: 1%;
   margin-left: auto;
 }
@@ -991,7 +986,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  line-height: 1.9rem;
+  line-height: 1.1rem !important;
   margin: 0 !important;
 }
 .health-bg #banner h1 {
@@ -1001,21 +996,51 @@ h6 {
   padding-bottom: 5%;
   background-color: rgb(226, 226, 226);
 }
+
 .health-bg #poop .card {
   background: transparent;
   position: relative;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 200px !important ;
+}
+.health-bg .dynamic-img-container {
+  height: 400px !important;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.health-bg .dynamic-img {
+  height: 100%;
 }
 .health-bg #poop .card img {
   border: 5px solid white;
   border-radius: 10px;
 }
+.health-bg #poop .card .card-img {
+  width: 100%;
+  height: 200px;
+}
+.health-bg #poop .card .card-img img {
+  width: 100%;
+  height: 200px;
+}
 .health-bg #poop .card .card-title {
   background-color: #f5f2ff;
 
   position: absolute;
-  bottom: -160px;
+
+  bottom: -60%;
+  margin: 0 auto;
   border-radius: 10px;
+}
+.health-bg #poop .card .card-title h6 {
+  line-height: 1.2rem !important;
 }
 .health-bg #poop .card .card-title .description {
   padding: 10px;
@@ -1071,11 +1096,16 @@ h6 {
 .author-bg #blogs .card {
   background: transparent;
   position: relative;
+  cursor: pointer;
   margin-bottom: 200px !important ;
 }
 .author-bg #blogs .card img {
   border: 5px solid white;
   border-radius: 10px;
+}
+.author-bg #blogs .card-img img {
+  width: 100%;
+  height: 200px;
 }
 .author-bg #blogs .card .card-title {
   background-color: #f5f2ff;
@@ -1085,7 +1115,9 @@ h6 {
   border-radius: 10px;
 }
 .author-bg #blogs .card .card-title .description {
+  overflow: hidden;
   padding: 10px;
+  height: 121px;
 }
 .author-bg #blogs .card .author {
   background-color: var(--main-color);
@@ -1181,7 +1213,7 @@ h6 {
 .test-quote {
   background-color: #91bf1c;
   width: 100%;
-  height: 35vh;
+  height: 38vh;
   padding: 10% 7% 2% 7%;
   color: white;
 }
@@ -1237,6 +1269,7 @@ h6 {
   background-color: var(--sec-color);
   margin: 14px;
   opacity: 0.4;
+  cursor: pointer;
 }
 .active-dots {
   opacity: 1;
@@ -1251,6 +1284,7 @@ h6 {
   background-color: #4f21f5;
 }
 .recipe-container .card {
+  cursor: pointer;
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 10px;
